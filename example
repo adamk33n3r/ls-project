@@ -1,0 +1,22 @@
+$controls true
+
+&simple
+bg red
+font-size 12pt
+
+@simple Slide 1
+This is the body of the text to be displayed on Slide 1.
+Whoa nelly this is kewl.
+
+@ Slide 2
+This slide does not have any formatting associated with it.
+It will just get default formatting applied.
+
+@@ Nested Slide 1
+Nested slide body
+
+@@simple Nested Slide 2
+STUFFF
+
+@ New slide not nested
+nom

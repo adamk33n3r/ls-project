@@ -1,0 +1,109 @@
+<h1>[Insert Title Here]</h1>
+
+<p>By Adam Keenan and Dallas Mullet</p>
+
+<h2>Define the domain</h2>
+
+<p>Slideshow in the browser
+Reveal.js</p>
+
+<h2>Define the problem</h2>
+
+<p>Reveal setup and configuration is verbose and tedious. This language is intended
+to simplify the slide generation process to make it a better experience.</p>
+
+<h2>Examples</h2>
+
+<h6>simple.config</h6>
+
+<pre><code>###################
+# '#' means comment.
+# '%' means command.
+# Indentation does not mean anything.
+# Parameters to commands are space delimited.
+# Properties of commands are each on new lines.
+# The properties values are preceded by a colon.
+###################
+
+# Configuration
+%config
+  controls: true
+%end
+
+# Formatting
+%format simple
+  bg: red
+  font-size: 12pt
+%end
+
+# Single Slide
+%slide
+  title: Title
+  body: Body of text to be displayed
+  format: simple
+%end
+
+# Vertical
+%section
+  format: simple
+  %slide
+    title: Title2
+  %end
+  %slide
+    title: Title3
+  %end
+%end 
+
+# Nested vertical
+%section
+  format: simple
+  %slide
+      title: Title4
+  %end
+  %section
+    %slide
+      title: Title5
+    %end
+    %slide
+      title: Title6
+    %end
+  %end
+%end
+</code></pre>
+
+<h6>simple.html</h6>
+
+<pre><code>&lt;script&gt;Reveal.initialize({controls:true});&lt;/script&gt;
+&lt;style type="text/css"&gt;
+    font-size: 12pt;
+&lt;/style&gt;
+&lt;div class="reveal"&gt;
+    &lt;div class="slides"&gt;
+        &lt;section class="simple" data-background="red"&gt;
+            &lt;title&gt;Title&lt;/title&gt;
+            &lt;content&gt;Yay&lt;/content&gt;
+        &lt;/section&gt;
+        &lt;section class="simple" data-background="red"&gt;
+            &lt;section&gt;
+                &lt;title&gt;Title2&lt;/title&gt;
+            &lt;/section&gt;
+            &lt;section&gt;
+                &lt;title&gt;Title3&lt;/title&gt;
+            &lt;/section&gt;
+        &lt;/section&gt;
+        &lt;section class="simple" data-background="red"&gt;
+            &lt;section&gt;
+                &lt;title&gt;Title4&lt;/title&gt;
+            &lt;/section&gt;
+            &lt;section&gt;
+                &lt;section&gt;
+                    &lt;title&gt;Title5&lt;/title&gt;
+                &lt;/section&gt;
+                &lt;section&gt;
+                    &lt;title&gt;Title6&lt;/title&gt;
+                &lt;/section&gt;
+            &lt;/section&gt;
+        &lt;/section&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
