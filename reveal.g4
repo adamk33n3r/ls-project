@@ -1,35 +1,54 @@
 grammar reveal;
 
-@parser::members {
-    int lineNumber = 0, expNumber = 1;
-    class Slide {
-        public String title, body;
-        public Slide(String title, String body) {
-            this.title = title;
-            this.body = body;
-        }
-    }
-    java.util.LinkedList<Slide> slides = new java.util.LinkedList<Slide>();
-    private void incrementLineNumber() {
-        this.lineNumber++;
-    }
-    private void printSlides() {
-        for (Slide slide : slides)
-            System.out.println(String.format("%s:\n%s", slide.title, slide.body));
-    }
+options {
+    language=Python3;
 }
 
-slideshow:  config* format* slide+ EOF { printSlides(); };
+@parser::members {
+    class Globals:
+        def __init__(self):
+        
+            class Slideshow:
+                def __init__(self):
+                    self.slides = []
+                def addSlide(self, slide):
+                    slide.title = slide.title[1:]
+                    if (slide.title[0] == '@'): # Is child
+                        self.slides[-1].child = slide
+                    else:
+                        self.slides.append(slide)
 
-slide:      var_title=title NL var_body=body NL* { slides.push(new Slide($var_title.text,$var_body.text)); };
+            self.Slideshow = Slideshow
+            self.slideshow = self.Slideshow()
 
-title:      var_format=(SLIDE | SLIDE2) var_title=text { /*System.out.println($var_title.text);*/ };
+            class Slide:
+                def __init__(self, title, body):
+                    self.title = title
+                    self.body = body
+                    self.child = None
+            self.Slide = Slide
+
+        def printSlides(self):
+            for slide in self.slideshow.slides:
+                print("{}:\n{}".format(slide.title, slide.body))
+                if slide.child:
+                        print("\t{}:\n\t{}".format(slide.child.title, slide.child.body))
+    self.globals = Globals()
+
+    
+}
+
+slideshow:  config* formatting* slide+ EOF {self.globals.printSlides()};
+
+slide:      var_title=title NL var_body=body NL* {self.globals.slideshow.addSlide(self.globals.Slide($var_title.text,$var_body.text))};
+
+title:      var_format=(SLIDE | SLIDE2) var_title=text {#System.out.println($var_title.text)};
 body:       (text NL)+;
 
 config:     CONFIG WORD option NL+;
 option:     WORD | ALPHANUM | NUMBER;
 
-format:     FORMAT WORD NL (setting option NL)+ NL*;
+formatting:     FORMAT WORD NL (setting option NL)+ NL*;
 setting:    DASHWORD | WORD;
 
 text:       (WORD | ALPHANUM | SYMBOL)+;
