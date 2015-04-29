@@ -11,36 +11,41 @@ else:
 def serializedATN():
     with StringIO() as buf:
         buf.write("\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3\21")
-        buf.write("a\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b")
+        buf.write("s\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b")
         buf.write("\t\b\4\t\t\t\4\n\t\n\3\2\7\2\26\n\2\f\2\16\2\31\13\2\3")
         buf.write("\2\7\2\34\n\2\f\2\16\2\37\13\2\3\2\6\2\"\n\2\r\2\16\2")
-        buf.write("#\3\2\3\2\3\2\3\3\3\3\3\3\3\3\7\3-\n\3\f\3\16\3\60\13")
-        buf.write("\3\3\3\3\3\3\4\3\4\3\4\3\4\3\5\3\5\3\5\6\5;\n\5\r\5\16")
-        buf.write("\5<\3\6\3\6\3\6\3\6\6\6C\n\6\r\6\16\6D\3\7\3\7\3\b\3\b")
-        buf.write("\3\b\3\b\3\b\3\b\3\b\6\bP\n\b\r\b\16\bQ\3\b\7\bU\n\b\f")
-        buf.write("\b\16\bX\13\b\3\t\3\t\3\n\6\n]\n\n\r\n\16\n^\3\n\2\2\13")
-        buf.write("\2\4\6\b\n\f\16\20\22\2\6\3\2\3\4\5\2\t\t\13\13\r\r\3")
-        buf.write("\2\t\n\5\2\t\t\13\13\17\17`\2\27\3\2\2\2\4(\3\2\2\2\6")
-        buf.write("\63\3\2\2\2\b:\3\2\2\2\n>\3\2\2\2\fF\3\2\2\2\16H\3\2\2")
-        buf.write("\2\20Y\3\2\2\2\22\\\3\2\2\2\24\26\5\n\6\2\25\24\3\2\2")
-        buf.write("\2\26\31\3\2\2\2\27\25\3\2\2\2\27\30\3\2\2\2\30\35\3\2")
-        buf.write("\2\2\31\27\3\2\2\2\32\34\5\16\b\2\33\32\3\2\2\2\34\37")
-        buf.write("\3\2\2\2\35\33\3\2\2\2\35\36\3\2\2\2\36!\3\2\2\2\37\35")
-        buf.write("\3\2\2\2 \"\5\4\3\2! \3\2\2\2\"#\3\2\2\2#!\3\2\2\2#$\3")
-        buf.write("\2\2\2$%\3\2\2\2%&\7\2\2\3&\'\b\2\1\2\'\3\3\2\2\2()\5")
-        buf.write("\6\4\2)*\7\20\2\2*.\5\b\5\2+-\7\20\2\2,+\3\2\2\2-\60\3")
-        buf.write("\2\2\2.,\3\2\2\2./\3\2\2\2/\61\3\2\2\2\60.\3\2\2\2\61")
-        buf.write("\62\b\3\1\2\62\5\3\2\2\2\63\64\t\2\2\2\64\65\5\22\n\2")
-        buf.write("\65\66\b\4\1\2\66\7\3\2\2\2\678\5\22\n\289\7\20\2\29;")
-        buf.write("\3\2\2\2:\67\3\2\2\2;<\3\2\2\2<:\3\2\2\2<=\3\2\2\2=\t")
-        buf.write("\3\2\2\2>?\7\5\2\2?@\7\t\2\2@B\5\f\7\2AC\7\20\2\2BA\3")
-        buf.write("\2\2\2CD\3\2\2\2DB\3\2\2\2DE\3\2\2\2E\13\3\2\2\2FG\t\3")
-        buf.write("\2\2G\r\3\2\2\2HI\7\6\2\2IJ\7\t\2\2JO\7\20\2\2KL\5\20")
-        buf.write("\t\2LM\5\f\7\2MN\7\20\2\2NP\3\2\2\2OK\3\2\2\2PQ\3\2\2")
-        buf.write("\2QO\3\2\2\2QR\3\2\2\2RV\3\2\2\2SU\7\20\2\2TS\3\2\2\2")
-        buf.write("UX\3\2\2\2VT\3\2\2\2VW\3\2\2\2W\17\3\2\2\2XV\3\2\2\2Y")
-        buf.write("Z\t\4\2\2Z\21\3\2\2\2[]\t\5\2\2\\[\3\2\2\2]^\3\2\2\2^")
-        buf.write("\\\3\2\2\2^_\3\2\2\2_\23\3\2\2\2\13\27\35#.<DQV^")
+        buf.write("#\3\2\3\2\3\2\3\3\3\3\3\3\3\3\3\3\7\3.\n\3\f\3\16\3\61")
+        buf.write("\13\3\3\3\3\3\3\4\3\4\3\4\3\4\3\4\3\5\3\5\3\5\6\5=\n\5")
+        buf.write("\r\5\16\5>\3\5\3\5\3\6\3\6\3\6\3\6\3\6\6\6H\n\6\r\6\16")
+        buf.write("\6I\3\6\3\6\3\7\3\7\3\7\3\7\5\7R\n\7\3\b\3\b\3\b\3\b\3")
+        buf.write("\b\3\b\3\b\6\b[\n\b\r\b\16\b\\\3\b\7\b`\n\b\f\b\16\bc")
+        buf.write("\13\b\3\b\3\b\3\t\3\t\3\t\5\tj\n\t\3\n\6\nm\n\n\r\n\16")
+        buf.write("\nn\3\n\3\n\3\n\2\2\13\2\4\6\b\n\f\16\20\22\2\4\3\2\3")
+        buf.write("\4\5\2\t\t\13\13\17\17u\2\27\3\2\2\2\4(\3\2\2\2\6\64\3")
+        buf.write("\2\2\2\b<\3\2\2\2\nB\3\2\2\2\fQ\3\2\2\2\16S\3\2\2\2\20")
+        buf.write("i\3\2\2\2\22l\3\2\2\2\24\26\5\n\6\2\25\24\3\2\2\2\26\31")
+        buf.write("\3\2\2\2\27\25\3\2\2\2\27\30\3\2\2\2\30\35\3\2\2\2\31")
+        buf.write("\27\3\2\2\2\32\34\5\16\b\2\33\32\3\2\2\2\34\37\3\2\2\2")
+        buf.write("\35\33\3\2\2\2\35\36\3\2\2\2\36!\3\2\2\2\37\35\3\2\2\2")
+        buf.write(" \"\5\4\3\2! \3\2\2\2\"#\3\2\2\2#!\3\2\2\2#$\3\2\2\2$")
+        buf.write("%\3\2\2\2%&\7\2\2\3&\'\b\2\1\2\'\3\3\2\2\2()\5\6\4\2)")
+        buf.write("*\b\3\1\2*+\7\20\2\2+/\5\b\5\2,.\7\20\2\2-,\3\2\2\2.\61")
+        buf.write("\3\2\2\2/-\3\2\2\2/\60\3\2\2\2\60\62\3\2\2\2\61/\3\2\2")
+        buf.write("\2\62\63\b\3\1\2\63\5\3\2\2\2\64\65\t\2\2\2\65\66\b\4")
+        buf.write("\1\2\66\67\5\22\n\2\678\b\4\1\28\7\3\2\2\29:\5\22\n\2")
+        buf.write(":;\7\20\2\2;=\3\2\2\2<9\3\2\2\2=>\3\2\2\2><\3\2\2\2>?")
+        buf.write("\3\2\2\2?@\3\2\2\2@A\b\5\1\2A\t\3\2\2\2BC\7\5\2\2CD\7")
+        buf.write("\t\2\2DE\5\f\7\2EG\b\6\1\2FH\7\20\2\2GF\3\2\2\2HI\3\2")
+        buf.write("\2\2IG\3\2\2\2IJ\3\2\2\2JK\3\2\2\2KL\b\6\1\2L\13\3\2\2")
+        buf.write("\2MR\7\t\2\2NR\7\13\2\2OP\7\r\2\2PR\b\7\1\2QM\3\2\2\2")
+        buf.write("QN\3\2\2\2QO\3\2\2\2R\r\3\2\2\2ST\7\6\2\2TU\7\t\2\2UZ")
+        buf.write("\7\20\2\2VW\5\20\t\2WX\5\f\7\2XY\7\20\2\2Y[\3\2\2\2ZV")
+        buf.write("\3\2\2\2[\\\3\2\2\2\\Z\3\2\2\2\\]\3\2\2\2]a\3\2\2\2^`")
+        buf.write("\7\20\2\2_^\3\2\2\2`c\3\2\2\2a_\3\2\2\2ab\3\2\2\2bd\3")
+        buf.write("\2\2\2ca\3\2\2\2de\b\b\1\2e\17\3\2\2\2fj\7\n\2\2gh\7\t")
+        buf.write("\2\2hj\b\t\1\2if\3\2\2\2ig\3\2\2\2j\21\3\2\2\2km\t\3\2")
+        buf.write("\2lk\3\2\2\2mn\3\2\2\2nl\3\2\2\2no\3\2\2\2op\3\2\2\2p")
+        buf.write("q\b\n\1\2q\23\3\2\2\2\r\27\35#/>IQ\\ain")
         return buf.getvalue()
 
 
@@ -101,10 +106,12 @@ class revealParser ( Parser ):
         self._predicates = None
 
 
+        #############################################
+        # START CUSTOM CLASSES
+        #############################################
 
         class Globals:
             def __init__(self):
-            
                 class Slideshow:
                     def __init__(self):
                         self.slides = []
@@ -132,8 +139,9 @@ class revealParser ( Parser ):
                             print("\t{}:\n\t{}".format(slide.child.title, slide.child.body))
         self.globals = Globals()
 
-        
-
+        #############################################
+        # END CUSTOM CLASSES
+        #############################################
 
     class SlideshowContext(ParserRuleContext):
 
@@ -220,7 +228,10 @@ class revealParser ( Parser ):
 
             self.state = 35
             self.match(revealParser.EOF)
+
+            # slideshow
             self.globals.printSlides()
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -274,21 +285,25 @@ class revealParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 38
             localctx.var_title = self.title()
-            self.state = 39
-            self.match(revealParser.NL)
+            # var_title
             self.state = 40
+            self.match(revealParser.NL)
+            self.state = 41
             localctx.var_body = self.body()
-            self.state = 44
+            self.state = 45
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==revealParser.NL:
-                self.state = 41
+                self.state = 42
                 self.match(revealParser.NL)
-                self.state = 46
+                self.state = 47
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
+            # var_body
+
             self.globals.slideshow.addSlide(self.globals.Slide((None if localctx.var_title is None else self._input.getText((localctx.var_title.start,localctx.var_title.stop))),(None if localctx.var_body is None else self._input.getText((localctx.var_body.start,localctx.var_body.stop)))))
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -336,16 +351,17 @@ class revealParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 49
+            self.state = 50
             localctx.var_format = self._input.LT(1)
             _la = self._input.LA(1)
             if not(_la==revealParser.SLIDE or _la==revealParser.SLIDE2):
                 localctx.var_format = self._errHandler.recoverInline(self)
             else:
                 self.consume()
-            self.state = 50
+            # var_format
+            self.state = 52
             localctx.var_title = self.text()
-            #System.out.println((None if localctx.var_title is None else self._input.getText((localctx.var_title.start,localctx.var_title.stop))))
+            # var_title
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -394,20 +410,21 @@ class revealParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 56 
+            self.state = 58 
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while True:
-                self.state = 53
+                self.state = 55
                 self.text()
-                self.state = 54
+                self.state = 56
                 self.match(revealParser.NL)
-                self.state = 58 
+                self.state = 60 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 if not ((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << revealParser.WORD) | (1 << revealParser.ALPHANUM) | (1 << revealParser.SYMBOL))) != 0)):
                     break
 
+            # body
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -459,24 +476,26 @@ class revealParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 60
+            self.state = 64
             self.match(revealParser.CONFIG)
-            self.state = 61
+            self.state = 65
             self.match(revealParser.WORD)
-            self.state = 62
+            self.state = 66
             self.option()
-            self.state = 64 
+            #config > option
+            self.state = 69 
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while True:
-                self.state = 63
+                self.state = 68
                 self.match(revealParser.NL)
-                self.state = 66 
+                self.state = 71 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 if not (_la==revealParser.NL):
                     break
 
+            # config
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -518,15 +537,28 @@ class revealParser ( Parser ):
 
         localctx = revealParser.OptionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 10, self.RULE_option)
-        self._la = 0 # Token type
         try:
-            self.enterOuterAlt(localctx, 1)
-            self.state = 68
-            _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << revealParser.WORD) | (1 << revealParser.ALPHANUM) | (1 << revealParser.NUMBER))) != 0)):
-                self._errHandler.recoverInline(self)
+            self.state = 79
+            token = self._input.LA(1)
+            if token in [revealParser.WORD]:
+                self.enterOuterAlt(localctx, 1)
+                self.state = 75
+                self.match(revealParser.WORD)
+
+            elif token in [revealParser.ALPHANUM]:
+                self.enterOuterAlt(localctx, 2)
+                self.state = 76
+                self.match(revealParser.ALPHANUM)
+
+            elif token in [revealParser.NUMBER]:
+                self.enterOuterAlt(localctx, 3)
+                self.state = 77
+                self.match(revealParser.NUMBER)
+                # option
+
             else:
-                self.consume()
+                raise NoViableAltException(self)
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -588,38 +620,39 @@ class revealParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 70
+            self.state = 81
             self.match(revealParser.FORMAT)
-            self.state = 71
+            self.state = 82
             self.match(revealParser.WORD)
-            self.state = 72
+            self.state = 83
             self.match(revealParser.NL)
-            self.state = 77 
+            self.state = 88 
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while True:
-                self.state = 73
+                self.state = 84
                 self.setting()
-                self.state = 74
+                self.state = 85
                 self.option()
-                self.state = 75
+                self.state = 86
                 self.match(revealParser.NL)
-                self.state = 79 
+                self.state = 90 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 if not (_la==revealParser.WORD or _la==revealParser.DASHWORD):
                     break
 
-            self.state = 84
+            self.state = 95
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==revealParser.NL:
-                self.state = 81
+                self.state = 92
                 self.match(revealParser.NL)
-                self.state = 86
+                self.state = 97
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
+            # formatting
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -658,15 +691,23 @@ class revealParser ( Parser ):
 
         localctx = revealParser.SettingContext(self, self._ctx, self.state)
         self.enterRule(localctx, 14, self.RULE_setting)
-        self._la = 0 # Token type
         try:
-            self.enterOuterAlt(localctx, 1)
-            self.state = 87
-            _la = self._input.LA(1)
-            if not(_la==revealParser.WORD or _la==revealParser.DASHWORD):
-                self._errHandler.recoverInline(self)
+            self.state = 103
+            token = self._input.LA(1)
+            if token in [revealParser.DASHWORD]:
+                self.enterOuterAlt(localctx, 1)
+                self.state = 100
+                self.match(revealParser.DASHWORD)
+
+            elif token in [revealParser.WORD]:
+                self.enterOuterAlt(localctx, 2)
+                self.state = 101
+                self.match(revealParser.WORD)
+                # setting
+
             else:
-                self.consume()
+                raise NoViableAltException(self)
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -720,22 +761,23 @@ class revealParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 90 
+            self.state = 106 
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while True:
-                self.state = 89
+                self.state = 105
                 _la = self._input.LA(1)
                 if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << revealParser.WORD) | (1 << revealParser.ALPHANUM) | (1 << revealParser.SYMBOL))) != 0)):
                     self._errHandler.recoverInline(self)
                 else:
                     self.consume()
-                self.state = 92 
+                self.state = 108 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 if not ((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << revealParser.WORD) | (1 << revealParser.ALPHANUM) | (1 << revealParser.SYMBOL))) != 0)):
                     break
 
+            # text
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
