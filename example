@@ -1,4 +1,5 @@
-$controls true
+$controls false
+$slideNumber true
 
 &simple
 bg red

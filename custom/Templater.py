@@ -14,10 +14,13 @@ class Templater(object):
         self.vSlideHTML = open(os.path.join(self.currentDir, vSlideHTML)).read()
 
     def generate(self):
+        configString = str(self.slideshow.config)
+        configString = configString.replace("'true'", "true")
+        configString = configString.replace("'false'", "false")
         slidesString = ""
         for slide in self.slideshow.slides:
             slidesString += self._createSlide(slide)
-        outputString = Template(self.baseHTML).substitute(config = str(self.slideshow.config), slides = slidesString)
+        outputString = Template(self.baseHTML).substitute(config = configString, slides = slidesString)
         self.outFile.write(outputString)
         self.outFile.close()
 
