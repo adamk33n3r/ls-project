@@ -10,7 +10,7 @@ else:
     from revealListener import revealListener
 def serializedATN():
     with StringIO() as buf:
-        buf.write("\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3\22")
+        buf.write("\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3\23")
         buf.write("e\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b")
         buf.write("\t\b\4\t\t\t\4\n\t\n\3\2\7\2\26\n\2\f\2\16\2\31\13\2\3")
         buf.write("\2\7\2\34\n\2\f\2\16\2\37\13\2\3\2\6\2\"\n\2\r\2\16\2")
@@ -20,26 +20,26 @@ def serializedATN():
         buf.write("\6\3\7\3\7\3\b\3\b\3\b\3\b\3\b\3\b\3\b\3\b\6\bT\n\b\r")
         buf.write("\b\16\bU\3\b\7\bY\n\b\f\b\16\b\\\13\b\3\t\3\t\3\n\6\n")
         buf.write("a\n\n\r\n\16\nb\3\n\2\2\13\2\4\6\b\n\f\16\20\22\2\6\3")
-        buf.write("\2\3\4\5\2\t\t\13\13\r\r\3\2\t\n\6\2\t\t\13\13\17\17\21")
-        buf.write("\21e\2\27\3\2\2\2\4\'\3\2\2\2\6\60\3\2\2\2\b;\3\2\2\2")
+        buf.write("\2\3\4\5\2\t\t\13\f\16\16\3\2\t\n\6\2\t\t\f\f\20\20\22")
+        buf.write("\22e\2\27\3\2\2\2\4\'\3\2\2\2\6\60\3\2\2\2\b;\3\2\2\2")
         buf.write("\n?\3\2\2\2\fI\3\2\2\2\16K\3\2\2\2\20]\3\2\2\2\22`\3\2")
         buf.write("\2\2\24\26\5\n\6\2\25\24\3\2\2\2\26\31\3\2\2\2\27\25\3")
         buf.write("\2\2\2\27\30\3\2\2\2\30\35\3\2\2\2\31\27\3\2\2\2\32\34")
         buf.write("\5\16\b\2\33\32\3\2\2\2\34\37\3\2\2\2\35\33\3\2\2\2\35")
         buf.write("\36\3\2\2\2\36!\3\2\2\2\37\35\3\2\2\2 \"\5\4\3\2! \3\2")
         buf.write("\2\2\"#\3\2\2\2#!\3\2\2\2#$\3\2\2\2$%\3\2\2\2%&\7\2\2")
-        buf.write("\3&\3\3\2\2\2\'(\5\6\4\2()\7\20\2\2)-\5\b\5\2*,\7\20\2")
+        buf.write("\3&\3\3\2\2\2\'(\5\6\4\2()\7\21\2\2)-\5\b\5\2*,\7\21\2")
         buf.write("\2+*\3\2\2\2,/\3\2\2\2-+\3\2\2\2-.\3\2\2\2.\5\3\2\2\2")
-        buf.write("/-\3\2\2\2\60\62\t\2\2\2\61\63\7\21\2\2\62\61\3\2\2\2")
+        buf.write("/-\3\2\2\2\60\62\t\2\2\2\61\63\7\22\2\2\62\61\3\2\2\2")
         buf.write("\63\64\3\2\2\2\64\62\3\2\2\2\64\65\3\2\2\2\65\66\3\2\2")
-        buf.write("\2\66\67\5\22\n\2\67\7\3\2\2\289\5\22\n\29:\7\20\2\2:")
+        buf.write("\2\66\67\5\22\n\2\67\7\3\2\2\289\5\22\n\29:\7\21\2\2:")
         buf.write("<\3\2\2\2;8\3\2\2\2<=\3\2\2\2=;\3\2\2\2=>\3\2\2\2>\t\3")
-        buf.write("\2\2\2?@\7\5\2\2@A\7\t\2\2AB\7\21\2\2BF\5\f\7\2CE\7\20")
+        buf.write("\2\2\2?@\7\5\2\2@A\7\t\2\2AB\7\22\2\2BF\5\f\7\2CE\7\21")
         buf.write("\2\2DC\3\2\2\2EH\3\2\2\2FD\3\2\2\2FG\3\2\2\2G\13\3\2\2")
         buf.write("\2HF\3\2\2\2IJ\t\3\2\2J\r\3\2\2\2KL\7\6\2\2LM\7\t\2\2")
-        buf.write("MS\7\20\2\2NO\5\20\t\2OP\7\21\2\2PQ\5\f\7\2QR\7\20\2\2")
+        buf.write("MS\7\21\2\2NO\5\20\t\2OP\7\22\2\2PQ\5\f\7\2QR\7\21\2\2")
         buf.write("RT\3\2\2\2SN\3\2\2\2TU\3\2\2\2US\3\2\2\2UV\3\2\2\2VZ\3")
-        buf.write("\2\2\2WY\7\20\2\2XW\3\2\2\2Y\\\3\2\2\2ZX\3\2\2\2Z[\3\2")
+        buf.write("\2\2\2WY\7\21\2\2XW\3\2\2\2Y\\\3\2\2\2ZX\3\2\2\2Z[\3\2")
         buf.write("\2\2[\17\3\2\2\2\\Z\3\2\2\2]^\t\4\2\2^\21\3\2\2\2_a\t")
         buf.write("\5\2\2`_\3\2\2\2ab\3\2\2\2b`\3\2\2\2bc\3\2\2\2c\23\3\2")
         buf.write("\2\2\f\27\35#-\64=FUZb")
@@ -59,12 +59,12 @@ class revealParser ( Parser ):
     literalNames = [ u"<INVALID>", u"<INVALID>", u"<INVALID>", u"'$'", u"'&'", 
                      u"'-'", u"<INVALID>", u"<INVALID>", u"<INVALID>", u"<INVALID>", 
                      u"<INVALID>", u"<INVALID>", u"<INVALID>", u"<INVALID>", 
-                     u"'\n'", u"' '" ]
+                     u"<INVALID>", u"'\n'", u"' '" ]
 
     symbolicNames = [ u"<INVALID>", u"SLIDE", u"SLIDE2", u"CONFIG", u"FORMAT", 
-                      u"DASH", u"QUOTE", u"WORD", u"DASHWORD", u"ALPHANUM", 
-                      u"LETTER", u"NUMBER", u"DIGIT", u"SYMBOL", u"NL", 
-                      u"SPACE", u"WS" ]
+                      u"DASH", u"QUOTE", u"WORD", u"DASHWORD", u"COLOR", 
+                      u"ALPHANUM", u"LETTER", u"NUMBER", u"DIGIT", u"SYMBOL", 
+                      u"NL", u"SPACE", u"WS" ]
 
     RULE_slideshow = 0
     RULE_slide = 1
@@ -88,14 +88,15 @@ class revealParser ( Parser ):
     QUOTE=6
     WORD=7
     DASHWORD=8
-    ALPHANUM=9
-    LETTER=10
-    NUMBER=11
-    DIGIT=12
-    SYMBOL=13
-    NL=14
-    SPACE=15
-    WS=16
+    COLOR=9
+    ALPHANUM=10
+    LETTER=11
+    NUMBER=12
+    DIGIT=13
+    SYMBOL=14
+    NL=15
+    SPACE=16
+    WS=17
 
     def __init__(self, input:TokenStream):
         super().__init__(input)
@@ -483,6 +484,9 @@ class revealParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
+        def COLOR(self):
+            return self.getToken(revealParser.COLOR, 0)
+
         def WORD(self):
             return self.getToken(revealParser.WORD, 0)
 
@@ -515,7 +519,7 @@ class revealParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 71
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << revealParser.WORD) | (1 << revealParser.ALPHANUM) | (1 << revealParser.NUMBER))) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << revealParser.WORD) | (1 << revealParser.COLOR) | (1 << revealParser.ALPHANUM) | (1 << revealParser.NUMBER))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self.consume()

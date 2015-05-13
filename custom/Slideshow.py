@@ -19,11 +19,12 @@ class Slideshow(object):
                 if len(self.slides) == 0:
                     raise Exception("No slides to become a child of")
                 else:
+                    slide.type = slide.type[1:]
                     self.slides[-1].children.append(slide)
             else:
                 self.slides.append(slide)
         else:
-            slide.type = None
+            slide.type = ""
             self.slides.append(slide)
 
     def printSlides(self):

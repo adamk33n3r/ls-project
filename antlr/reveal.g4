@@ -12,7 +12,7 @@ title:      var_type=(SLIDE | SLIDE2) SPACE+ var_string=string;
 body:       (string NL)+;
 
 config:     CONFIG var_option=WORD SPACE var_value=option NL*;
-option:     WORD | ALPHANUM | NUMBER;
+option:     COLOR | WORD | ALPHANUM | NUMBER;
 
 formatting: FORMAT var_name=WORD NL (var_setting=setting SPACE var_option=option NL)+ NL*;
 setting:    DASHWORD | WORD;
@@ -27,6 +27,7 @@ DASH:       '-';
 QUOTE:      '\'' | '"';
 WORD:       LETTER+;
 DASHWORD:   WORD (DASH WORD)+;
+COLOR:      '#' ALPHANUM;
 ALPHANUM:   (WORD | NUMBER)+;
 LETTER:     'a'..'z' | 'A'..'Z';
 NUMBER:     DIGIT+;
