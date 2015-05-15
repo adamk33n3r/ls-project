@@ -1,0 +1,33 @@
+<h1>Reveal.js DSL</h1>
+
+<h2>How to use</h2>
+
+<p>Look in the example file for an....example.</p>
+
+<h3>Input file format</h3>
+
+<ol>
+<li>Configuration
+<ul>
+<li>Starts with <code>$</code></li>
+</ul></li>
+<li>Styling
+<ul>
+<li>Name of style starts with <code>&amp;</code></li>
+<li>Use <code>bg</code> for slide background and any other css</li>
+</ul></li>
+<li>Slides
+<ul>
+<li>Starts with <code>@</code> followed immediately by an optional style to apply then the
+title of the slide</li>
+<li>Everything followed is the body</li>
+<li>If you use two <code>@</code> then it will become a child of the main slide.</li>
+</ul></li>
+</ol>
+
+<h3>Generate presentation</h3>
+
+<p>To generate run <code>./main.py filename</code></p>
+
+<p>This will output your presentation into a folder called <code>output</code> in the current
+folder.</p>
